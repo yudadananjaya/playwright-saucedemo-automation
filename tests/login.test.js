@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { LoginPage } = require('../page-objects/login.page');
+const { LoginPage } = require('../pageObject/login.page');
 
 test.describe('Login Tests', () => {
   test('Login with valid credentials', async ({ page }) => {
