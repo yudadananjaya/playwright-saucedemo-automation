@@ -1,0 +1,303 @@
+{
+  "config": {
+    "configFile": "/Users/yuda/Documents/project-playwright/playwright-saucedemo-automation/playwright.config.js",
+    "rootDir": "/Users/yuda/Documents/project-playwright/playwright-saucedemo-automation/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "test-results/html-report",
+          "open": "never"
+        }
+      ],
+      [
+        "/Users/yuda/Documents/project-playwright/playwright-saucedemo-automation/reporter.js",
+        {}
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/yuda/Documents/project-playwright/playwright-saucedemo-automation/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "/Users/yuda/Documents/project-playwright/playwright-saucedemo-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.48.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "addToChart.test.js",
+      "file": "addToChart.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Inventory Actions",
+          "file": "addToChart.test.js",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Add item to cart by product name",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 7246,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-11T07:26:13.858Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/yuda/Documents/project-playwright/playwright-saucedemo-automation/test-results/addToChart-Inventory-Actio-c740c-tem-to-cart-by-product-name/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5b447a6ae6a709a8546c-ffc5a89ea70908530a10",
+              "file": "addToChart.test.js",
+              "line": 23,
+              "column": 5
+            },
+            {
+              "title": "Add multiple items to cart by product name",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30595,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-11T07:26:21.499Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/yuda/Documents/project-playwright/playwright-saucedemo-automation/test-results/addToChart-Inventory-Actio-da8f4-ems-to-cart-by-product-name/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/yuda/Documents/project-playwright/playwright-saucedemo-automation/test-results/addToChart-Inventory-Actio-da8f4-ems-to-cart-by-product-name/video.webm"
+                        }
+                      ]
+                    },
+                    {
+                      "workerIndex": 2,
+                      "status": "timedOut",
+                      "duration": 30649,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2024-11-11T07:26:52.412Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/yuda/Documents/project-playwright/playwright-saucedemo-automation/test-results/addToChart-Inventory-Actio-da8f4-ems-to-cart-by-product-name-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/yuda/Documents/project-playwright/playwright-saucedemo-automation/test-results/addToChart-Inventory-Actio-da8f4-ems-to-cart-by-product-name-retry1/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5b447a6ae6a709a8546c-f27c1a90009c2eb373a5",
+              "file": "addToChart.test.js",
+              "line": 32,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "login.test.js",
+      "file": "login.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Tests",
+          "file": "login.test.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login with valid credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 7273,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-11T07:26:13.858Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/yuda/Documents/project-playwright/playwright-saucedemo-automation/test-results/login-Login-Tests-Login-with-valid-credentials/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "087306b8335cdced5c6c-501ebf9f25e4bc6544d7",
+              "file": "login.test.js",
+              "line": 5,
+              "column": 3
+            },
+            {
+              "title": "Login with invalid credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 6985,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-11T07:26:21.532Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/yuda/Documents/project-playwright/playwright-saucedemo-automation/test-results/login-Login-Tests-Login-with-invalid-credentials/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "087306b8335cdced5c6c-9e90ae49ee850bc729f0",
+              "file": "login.test.js",
+              "line": 13,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-11-11T07:26:13.562Z",
+    "duration": 69939.67099999999,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

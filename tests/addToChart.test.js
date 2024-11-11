@@ -31,7 +31,7 @@ test.describe('Inventory Actions', () => {
 
     test('Add multiple items to cart by product name', async () => {
         // List of items to add to the cart
-        const itemsToAdd = ['Sauce Labs Backpack', 'Sauce Labs Bolt T-Shirt', 'Sauce Labs Bike Light'];
+        const itemsToAdd = ['Sauce Labs Backpack', 'Sauce Labs Bolt T-Shirt', 'a1a1a1a1'];
 
         // Loop through and add each item to the cart
         for (const item of itemsToAdd) {

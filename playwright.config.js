@@ -1,4 +1,7 @@
-module.exports = {
+const { defineConfig } = require('@playwright/test');
+const CustomReporter = require('./reporter.js');
+
+module.exports = defineConfig({
     testDir: './tests',
     timeout: 30000,
     retries: 1,
@@ -13,7 +16,11 @@ module.exports = {
       launchOptions: {
         slowMo: 1000,  // Slows down by 1 seconds between actions
       },
-      
     },
-  };
-  
+    // Configure reporters
+    reporter: [
+      ['json', { outputFile: 'test-results/results.json' }],
+      ['html', { outputFolder: 'test-results/html-report', open: 'never' }], // Save HTML report
+      ['./reporter.js', {}],
+    ],    
+});
